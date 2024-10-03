@@ -7,8 +7,8 @@ from nltk.corpus import stopwords
 
 # Initialize the stemmer and download necessary NLTK resources
 ps = PorterStemmer()
-nltk.download('punkt')
-nltk.download('stopwords')  # Ensure stopwords are downloaded
+nltk.download('punkt',quiet=True)
+nltk.download('stopwords',quiet=True)  # Ensure stopwords are downloaded
 
 # Load the vectorizer and model
 tf = pickle.load(open('vectorizer.pkl', 'rb'))
