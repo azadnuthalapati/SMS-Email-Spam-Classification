@@ -1,0 +1,5 @@
+# Automatically convert line endings for text files to match the operating system
+* text=auto
+
+# Ensure Python files use LF line endings (useful for cross-platform compatibility)
+*.py text eol=lf
